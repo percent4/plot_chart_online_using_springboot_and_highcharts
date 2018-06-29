@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<h1>文件上传状态</h1>
+
+<div th:if="${message}">
+    <h2 th:text="${message}"/>
+</div>
+<a href="/csvplot"><button class="btn btn-primary">返回文件上传</button></a>
+<a href="/review"><button class="btn btn-warning" id="review">数据预览</button></a>
+</body>
+</html>
